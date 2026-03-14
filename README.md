@@ -16,19 +16,19 @@ An ultra-lightweight signal system inspired by Godot for JavaScript. Zero depend
 ## 📦 Installation
 
 ```bash
-npm install nanosignals
+npm install @cyberwebdev/nanosignals
 ```
 
 Or with a CDN:
 
 ```javascript
-import { Signal } from "https://esm.sh/nanosignals";
+import { Signal } from "https://esm.sh/@cyberwebdev/nanosignals";
 ```
 
 ## 🚀 Quick Start
 
 ```javascript
-import { Signal } from "nanosignals";
+import { Signal } from "@cyberwebdev/nanosignals";
 
 class Player {
 	constructor() {
@@ -130,7 +130,7 @@ console.log(signal.listenerCount); // 3
 
 ```javascript
 // events.js
-import { Signal } from "nanosignals";
+import { Signal } from "@cyberwebdev/nanosignals";
 
 export const userLoggedIn = new Signal();
 export const userLoggedOut = new Signal();
