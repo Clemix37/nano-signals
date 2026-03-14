@@ -1,0 +1,46 @@
+{
+	"name": "nanosignals",
+	"version": "1.0.0",
+	"description": "Ultra-lightweight signal system inspired by Godot for JavaScript",
+	"main": "index.js",
+	"type": "module",
+	"exports": {
+		".": {
+			"import": "./index.js",
+			"require": "./index.cjs"
+		}
+	},
+	"scripts": {
+		"test": "node --test test/*.test.js",
+		"test:watch": "node --test --watch test/*.test.js"
+	},
+	"keywords": [
+		"signals",
+		"events",
+		"observer",
+		"pubsub",
+		"godot",
+		"lightweight",
+		"zero-dependencies",
+		"event-emitter"
+	],
+	"author": "CyberWebDev cyberwebdeviot@gmail.com",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Clemix37/nanosignals.git"
+	},
+	"bugs": {
+		"url": "https://github.com/Clemix37/nanosignals/issues"
+	},
+	"homepage": "https://github.com/Clemix37/nanosignals#readme",
+	"files": [
+		"index.js",
+		"index.cjs",
+		"README.md",
+		"LICENSE"
+	],
+	"engines": {
+		"node": ">=16.0.0"
+	}
+}
