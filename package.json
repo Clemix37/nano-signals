@@ -1,5 +1,5 @@
 {
-	"name": "nanosignals",
+	"name": "@cyberwebdev/nanosignals",
 	"version": "1.0.0",
 	"description": "Ultra-lightweight signal system inspired by Godot for JavaScript",
 	"main": "index.js",
