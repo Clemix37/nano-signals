@@ -1,18 +1,25 @@
 {
 	"name": "@cyberwebdev/nanosignals",
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"description": "Ultra-lightweight signal system inspired by Godot for JavaScript",
 	"main": "index.js",
+	"module": "index.js",
+	"browser": "index.min.js",
 	"type": "module",
 	"exports": {
 		".": {
+			"types": "./index.d.ts",
 			"import": "./index.js",
-			"require": "./index.cjs"
+			"require": "./index.min.js",
+			"browser": "./index.min.js"
 		}
 	},
 	"scripts": {
+		"build": "terser index.js -c -m -o index.min.js --source-map",
+		"prepublishOnly": "npm run build",
 		"test": "node --test test/*.test.js",
-		"test:watch": "node --test --watch test/*.test.js"
+		"test:watch": "node --test --watch test/*.test.js",
+		"size": "echo 'Original:' && wc -c < index.js && echo 'Minified:' && wc -c < index.min.js"
 	},
 	"keywords": [
 		"signals",
@@ -22,25 +29,35 @@
 		"godot",
 		"lightweight",
 		"zero-dependencies",
-		"event-emitter"
+		"event-emitter",
+		"typescript",
+		"debug",
+		"pause",
+		"error-handling"
 	],
-	"author": "CyberWebDev cyberwebdeviot@gmail.com",
+	"author": "CyberWebDev",
 	"license": "MIT",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/Clemix37/nano-signals.git"
+		"url": "https://github.com/Clemix37/nanosignals.git"
 	},
 	"bugs": {
-		"url": "https://github.com/Clemix37/nano-signals/issues"
+		"url": "https://github.com/Clemix37/nanosignals/issues"
 	},
-	"homepage": "https://github.com/Clemix37/nano-signals#readme",
+	"homepage": "https://github.com/Clemix37/nanosignals#readme",
 	"files": [
 		"index.js",
-		"index.cjs",
+		"index.min.js",
+		"index.min.js.map",
+		"index.d.ts",
 		"README.md",
+		"CHANGELOG.md",
 		"LICENSE"
 	],
 	"engines": {
 		"node": ">=16.0.0"
+	},
+	"devDependencies": {
+		"terser": "^5.36.0"
 	}
 }

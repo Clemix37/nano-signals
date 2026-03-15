@@ -1,0 +1,29 @@
+# Tests files
+test/
+*.test.js
+
+# Examples
+examples/
+
+# Development files
+node_modules/
+.git/
+.gitignore
+.DS_Store
+*.log
+
+# Config files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Documentation (keep README and CHANGELOG)
+*.md
+!README.md
+!CHANGELOG.md
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
