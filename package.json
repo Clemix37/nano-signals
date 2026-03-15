@@ -28,12 +28,12 @@
 	"license": "MIT",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/Clemix37/nanosignals.git"
+		"url": "https://github.com/Clemix37/nano-signals.git"
 	},
 	"bugs": {
-		"url": "https://github.com/Clemix37/nanosignals/issues"
+		"url": "https://github.com/Clemix37/nano-signals/issues"
 	},
-	"homepage": "https://github.com/Clemix37/nanosignals#readme",
+	"homepage": "https://github.com/Clemix37/nano-signals#readme",
 	"files": [
 		"index.js",
 		"index.cjs",
